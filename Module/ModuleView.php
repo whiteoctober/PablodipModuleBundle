@@ -41,6 +41,18 @@ class ModuleView
     }
 
     /**
+     * Checks if the module has a named action
+     *
+     * @param string $actionName The action name.
+     *
+     * @return bool
+     */
+    public function hasAction($actionName)
+    {
+        return $this->module->hasAction($actionName);
+    }
+
+    /**
      * Generates a path for a module url.
      *
      * @param string $actionName The action name.
