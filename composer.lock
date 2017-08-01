@@ -1,36 +1,40 @@
 {
-    "hash": "2b65eb7c47ab546bc5a0b98221b8b895",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "546287515c672ebb869ad2f1aa700b6a",
     "packages": [
         {
             "name": "doctrine/common",
             "version": "2.3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/common",
-                "reference": "bb0aebbf234db52df476a2b473d434745b34221c"
+                "url": "https://github.com/doctrine/common.git",
+                "reference": "bb0aebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/zipball/bb0aebbf234db52df476a2b473d434745b34221c",
-                "reference": "bb0aebbf234db52df476a2b473d434745b34221c",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/bb0aebb",
+                "reference": "bb0aebb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1348120518",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.3.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -38,7 +42,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -63,33 +68,32 @@
             "description": "Common Library for Doctrine projects",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
-                "collections",
-                "spl",
-                "eventmanager",
                 "annotations",
-                "persistence"
-            ]
+                "collections",
+                "eventmanager",
+                "persistence",
+                "spl"
+            ],
+            "time": "2012-09-20 05:55:18"
         },
         {
             "name": "pablodip/molino",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/pablodip/molino.git",
-                "reference": "d3d4c552403a9b1542f785af59b5683ee7df2a51"
+                "url": "https://github.com/whiteoctober/molino.git",
+                "reference": "689797797c433eba97467b18d68f783be120e42e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/pablodip/molino/zipball/d3d4c552403a9b1542f785af59b5683ee7df2a51",
-                "reference": "d3d4c552403a9b1542f785af59b5683ee7df2a51",
+                "url": "https://api.github.com/repos/whiteoctober/molino/zipball/689797797c433eba97467b18d68f783be120e42e",
+                "reference": "689797797c433eba97467b18d68f783be120e42e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1341931732",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Molino": "src"
@@ -101,139 +105,185 @@
             "authors": [
                 {
                     "name": "Pablo Díez",
-                    "email": "pablodip@gmail.com",
-                    "homepage": "http://github.com/pablodip"
+                    "email": "pablodip@gmail.com"
                 }
             ],
             "description": "Small and fast library to make reusable tools persistence backend agnostic.",
             "homepage": "https://github.com/pablodip/molino",
             "keywords": [
                 "backend"
-            ]
+            ],
+            "support": {
+                "source": "https://github.com/whiteoctober/molino/tree/master"
+            },
+            "time": "2015-04-30 16:09:13"
         },
         {
-            "name": "symfony/symfony",
-            "version": "2.1.x-dev",
+            "name": "psr/log",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "git://github.com/symfony/symfony.git",
-                "reference": "1202d9a7386d4245ef48ab89dcd2c97ea9a094e4"
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/zipball/1202d9a7386d4245ef48ab89dcd2c97ea9a094e4",
-                "reference": "1202d9a7386d4245ef48ab89dcd2c97ea9a094e4",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21T11:40:51+00:00"
+        },
+        {
+            "name": "symfony/symfony",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/symfony.git",
+                "reference": "23c2be3d329d98a5750f5d5c50135a63858836cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/23c2be3d329d98a5750f5d5c50135a63858836cd",
+                "reference": "23c2be3d329d98a5750f5d5c50135a63858836cd",
                 "shasum": ""
             },
             "require": {
+                "doctrine/common": "~2.2",
                 "php": ">=5.3.3",
-                "doctrine/common": ">2.2,<2.4-dev",
-                "twig/twig": ">=1.9.1,<2.0-dev"
+                "psr/log": "~1.0",
+                "twig/twig": "~1.11"
             },
             "replace": {
-                "symfony/doctrine-bridge": "self.version",
-                "symfony/monolog-bridge": "self.version",
-                "symfony/propel1-bridge": "self.version",
-                "symfony/swiftmailer-bridge": "self.version",
-                "symfony/twig-bridge": "self.version",
-                "symfony/framework-bundle": "self.version",
-                "symfony/security-bundle": "self.version",
-                "symfony/twig-bundle": "self.version",
-                "symfony/web-profiler-bundle": "self.version",
                 "symfony/browser-kit": "self.version",
                 "symfony/class-loader": "self.version",
                 "symfony/config": "self.version",
                 "symfony/console": "self.version",
                 "symfony/css-selector": "self.version",
                 "symfony/dependency-injection": "self.version",
+                "symfony/doctrine-bridge": "self.version",
                 "symfony/dom-crawler": "self.version",
                 "symfony/event-dispatcher": "self.version",
                 "symfony/filesystem": "self.version",
                 "symfony/finder": "self.version",
                 "symfony/form": "self.version",
+                "symfony/framework-bundle": "self.version",
                 "symfony/http-foundation": "self.version",
                 "symfony/http-kernel": "self.version",
                 "symfony/locale": "self.version",
+                "symfony/monolog-bridge": "self.version",
                 "symfony/options-resolver": "self.version",
                 "symfony/process": "self.version",
+                "symfony/propel1-bridge": "self.version",
+                "symfony/property-access": "self.version",
                 "symfony/routing": "self.version",
                 "symfony/security": "self.version",
+                "symfony/security-bundle": "self.version",
                 "symfony/serializer": "self.version",
+                "symfony/stopwatch": "self.version",
+                "symfony/swiftmailer-bridge": "self.version",
                 "symfony/templating": "self.version",
                 "symfony/translation": "self.version",
+                "symfony/twig-bridge": "self.version",
+                "symfony/twig-bundle": "self.version",
                 "symfony/validator": "self.version",
+                "symfony/web-profiler-bundle": "self.version",
                 "symfony/yaml": "self.version"
             },
             "require-dev": {
-                "doctrine/dbal": ">=2.2,<2.4-dev",
-                "doctrine/orm": ">=2.2.3,<2.4-dev",
                 "doctrine/data-fixtures": "1.0.*",
-                "propel/propel1": "dev-master",
-                "monolog/monolog": "dev-master"
+                "doctrine/dbal": "~2.2",
+                "doctrine/orm": "~2.2,>=2.2.3",
+                "monolog/monolog": "~1.3",
+                "propel/propel1": "1.6.*"
             },
-            "time": "1349767195",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
-                    "Symfony": "src/",
-                    "SessionHandlerInterface": "src/Symfony/Component/HttpFoundation/Resources/stubs"
-                }
+                    "Symfony\\": "src/"
+                },
+                "classmap": [
+                    "src/Symfony/Component/HttpFoundation/Resources/stubs",
+                    "src/Symfony/Component/Locale/Resources/stubs"
+                ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "The Symfony PHP framework",
             "homepage": "http://symfony.com",
             "keywords": [
                 "framework"
-            ]
+            ],
+            "time": "2013-03-01T06:52:29+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "dev-master",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
-                "url": "git://github.com/fabpot/Twig.git",
-                "reference": "347bc81d6ed8e2bb793236aa9917c7e83f81c2b3"
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "795f6d876a0b6b04899ec140e0d4f4d3d5074b8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/zipball/347bc81d6ed8e2bb793236aa9917c7e83f81c2b3",
-                "reference": "347bc81d6ed8e2bb793236aa9917c7e83f81c2b3",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/795f6d876a0b6b04899ec140e0d4f4d3d5074b8c",
+                "reference": "795f6d876a0b6b04899ec140e0d4f4d3d5074b8c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1349702400",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.10-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Twig_": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3"
             ],
@@ -251,7 +301,8 @@
             "homepage": "http://twig.sensiolabs.org",
             "keywords": [
                 "templating"
-            ]
+            ],
+            "time": "2012-11-07T11:20:21+00:00"
         }
     ],
     "packages-dev": [
@@ -260,27 +311,34 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/mandango/mandango.git",
-                "reference": "4897b64d2e94d34476f5c0afa6af506ce1e9182f"
+                "url": "https://github.com/mandango/mandango.git",
+                "reference": "565bdca740a736e9bdf8ceef7f03b6724bfc730e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/mandango/mandango/zipball/4897b64d2e94d34476f5c0afa6af506ce1e9182f",
-                "reference": "4897b64d2e94d34476f5c0afa6af506ce1e9182f",
+                "url": "https://api.github.com/repos/mandango/mandango/zipball/565bdca740a736e9bdf8ceef7f03b6724bfc730e",
+                "reference": "565bdca740a736e9bdf8ceef7f03b6724bfc730e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "mandango/mondator": "dev-master"
+                "mandango/mondator": "1.0.*@dev",
+                "php": ">=5.3.0"
             },
-            "time": "1339154613",
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
             "type": "library",
-            "installation-source": "source",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Mandango\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -296,7 +354,8 @@
             "keywords": [
                 "mongodb",
                 "odm"
-            ]
+            ],
+            "time": "2013-11-02 17:17:14"
         },
         {
             "name": "mandango/mandango-bundle",
@@ -304,27 +363,26 @@
             "target-dir": "Mandango/MandangoBundle",
             "source": {
                 "type": "git",
-                "url": "git://github.com/mandango/MandangoBundle.git",
+                "url": "https://github.com/mandango/MandangoBundle.git",
                 "reference": "36e2ff4cc43989abbb3bd2f84cd7909c0f39d5b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/mandango/MandangoBundle/zipball/36e2ff4cc43989abbb3bd2f84cd7909c0f39d5b9",
+                "url": "https://api.github.com/repos/mandango/MandangoBundle/zipball/36e2ff4cc43989abbb3bd2f84cd7909c0f39d5b9",
                 "reference": "36e2ff4cc43989abbb3bd2f84cd7909c0f39d5b9",
                 "shasum": ""
             },
             "require": {
-                "symfony/framework-bundle": "2.*",
-                "mandango/mandango": "dev-master"
+                "mandango/mandango": "dev-master",
+                "symfony/framework-bundle": "2.*"
             },
-            "time": "1347957909",
             "type": "symfony-bundle",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Mandango\\MandangoBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -337,36 +395,44 @@
             ],
             "description": "Bundle to use Mandango with Symfony2",
             "keywords": [
-                "mongodb",
-                "mandango"
-            ]
+                "mandango",
+                "mongodb"
+            ],
+            "time": "2012-09-18 08:45:09"
         },
         {
             "name": "mandango/mondator",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/mandango/mondator.git",
-                "reference": "ed3d5aedf152f46ad5e0dcc20056b182f52e227c"
+                "url": "https://github.com/mandango/mondator.git",
+                "reference": "f4fdddc37e22b2fc2ffcc1d5ce5ff3327982e538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/mandango/mondator/zipball/ed3d5aedf152f46ad5e0dcc20056b182f52e227c",
-                "reference": "ed3d5aedf152f46ad5e0dcc20056b182f52e227c",
+                "url": "https://api.github.com/repos/mandango/mondator/zipball/f4fdddc37e22b2fc2ffcc1d5ce5ff3327982e538",
+                "reference": "f4fdddc37e22b2fc2ffcc1d5ce5ff3327982e538",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "twig/twig": ">=1.2"
+                "twig/twig": "~1.2"
             },
-            "time": "1343565529",
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
             "type": "library",
-            "installation-source": "source",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Mandango\\Mondator\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -380,15 +446,21 @@
             "description": "Easy and flexible class generator for PHP",
             "keywords": [
                 "class-generator"
-            ]
+            ],
+            "time": "2013-11-02 17:10:18"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "pablodip/molino": 20,
+        "doctrine/common": 20,
         "mandango/mandango-bundle": 20
-    }
+    },
+    "prefer-stable": false,
+    "prefer-lowest": true,
+    "platform": {
+        "php": ">=5.3.2"
+    },
+    "platform-dev": []
 }
