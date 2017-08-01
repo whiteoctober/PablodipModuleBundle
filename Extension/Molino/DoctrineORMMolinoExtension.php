@@ -26,6 +26,6 @@ class DoctrineORMMolinoExtension extends BaseMolinoExtension
      */
     protected function registerMolino()
     {
-        return new Molino($this->getModule()->getContainer()->get('doctrine')->getManager());
+        return new Molino($this->getModule()->getContainer()->get('doctrine')->getEntityManager());
     }
 }
