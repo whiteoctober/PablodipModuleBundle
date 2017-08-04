@@ -42,7 +42,7 @@ class SymfonySerializerData implements NormalizableInterface, DenormalizableInte
         return $this->content;
     }
 
-    public function normalize(NormalizerInterface $normalizer, $format = null)
+    public function normalize(NormalizerInterface $normalizer, $format = null, array $context = array())
     {
         return array(
             'title'   => $this->getTitle(),
@@ -50,7 +50,7 @@ class SymfonySerializerData implements NormalizableInterface, DenormalizableInte
         );
     }
 
-    public function denormalize(DenormalizerInterface $denormalizer, $data, $format = null)
+    public function denormalize(DenormalizerInterface $denormalizer, $data, $format = null, array $context = array())
     {
         if (isset($data['title'])) {
             $this->setTitle($data['title']);
